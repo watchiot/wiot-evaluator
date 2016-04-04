@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["gorums"]
   spec.email         = ["acksecurity@hotmail.com"]
 
-  spec.summary       = %q{TODO: Yaml configuration parser.}
-  spec.description   = %q{TODO: This gem parse the watchiot yaml configuration.}
-  spec.homepage      = "TODO: www.watchiot.org"
+  spec.summary       = %q{Yaml configuration parser.}
+  spec.description   = %q{This gem parse the watchiot yaml configuration.}
+  spec.homepage      = "www.watchiot.org"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

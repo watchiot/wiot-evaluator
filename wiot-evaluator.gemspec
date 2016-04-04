@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Yaml configuration parser.}
   spec.description   = %q{This gem parse the watchiot yaml configuration.}
-  spec.homepage      = "www.watchiot.org"
+  spec.homepage      = "http://www.watchiot.org"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

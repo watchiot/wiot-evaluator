@@ -2,7 +2,7 @@
 #
 #
 module Wiot
-  module Evaluator
+  module Parser
     class ParserError
       def initialize(row, column, text)
         @row=row

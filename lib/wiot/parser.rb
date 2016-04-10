@@ -1,8 +1,8 @@
-require 'wiot/evaluator/version'
-require 'wiot/evaluator/parser_error'
+require 'wiot/parser/version'
+require 'wiot/parser/error'
 
 module Wiot
-  module Evaluator
+  module Parser
     def self.token
       %w(ip url server)
     end

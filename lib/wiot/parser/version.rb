@@ -1,5 +1,5 @@
 module Wiot
-  module Evaluator
+  module Parser
     VERSION = "0.1.0"
   end
 end

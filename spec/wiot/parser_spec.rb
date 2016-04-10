@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-describe Wiot::Evaluator do
+describe Wiot::Parser do
   it 'has a version number' do
-    expect(Wiot::Evaluator::VERSION).not_to be_nil
+    expect(Wiot::Parser::VERSION).not_to be_nil
   end
 
   it 'valid yaml with nil constrainers' do
-    errors = Wiot::Evaluator.parse('yaml', nil)
+    errors = Wiot::Parser.parse('yaml', nil)
     expect(errors).not_to be_nil
     expect(errors.length).to eq(2)
   end
 
   it 'valid yaml with nil constrainers' do
-    tokens = Wiot::Evaluator.token
+    tokens = Wiot::Parser.token
     expect(tokens).not_to be_nil
 
     expect(tokens.length).to eq(3)

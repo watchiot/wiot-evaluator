@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'wiot/evaluator/version'
+require 'wiot/parser/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "wiot-evaluator"
-  spec.version       = Wiot::Evaluator::VERSION
+  spec.name          = "wiot-parser"
+  spec.version       = Wiot::Parser::VERSION
   spec.authors       = ["gorums"]
   spec.email         = ["acksecurity@hotmail.com"]
 

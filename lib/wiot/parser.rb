@@ -1,19 +1,12 @@
 
 require 'wiot/parser/error'
-require 'wiot/parser/error_io'
-
-require 'wiot/parser/antlr/GrammarLexer'
-require 'wiot/parser/antlr/GrammarParser'
 
 module Wiot
   module Parser
     def self.parse(yaml, constrainers)
-      error = ErrorIO.new
-
-      lexer = Grammar::Lexer.new( "1 * 1" )
-      Grammar::Parser.new( lexer, {error_output: error}).expression
-
-      error.errors unless error.errors.nil? || error.errors.empty?
+      errors = {}
+      errors['error-' + errors.size.to_s] = ParserError.new(1, 1, 'bafd token')
+      errors
     end
 
     def self.token

@@ -18,6 +18,12 @@ module Wiot
       def row=(row)
         @row = row
       end
+
+      def self.yaml_exception(msg)
+        errors = {}
+        errors['error-' + errors.size.to_s] = ParserError.new(1, 1, msg)
+        errors
+      end
     end
   end
 end

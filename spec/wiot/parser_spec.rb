@@ -1,9 +1,10 @@
 require 'spec_helper'
-require 'wiot/parser/version'
 
-describe Wiot::Parser do
+require 'wiot_parser/version'
+
+describe WiotParser do
   it 'has a version number' do
-    expect(Wiot::Parser::VERSION).not_to be_nil
+    expect(WiotParser::VERSION).not_to be_nil
   end
 
   it 'valid yaml with nil constrainers' do
@@ -25,13 +26,13 @@ critical:
     email:
         tpl: You have the partition ${partition_name} in the server ${server_name} with ${free_percent_space} percent free'
 
-    errors = Wiot::Parser.parse(yaml, nil)
+    errors = WiotParser::parse(yaml, nil)
     expect(errors).not_to be_nil
     expect(errors.length).to eq(1)
   end
 
   it 'valid yaml with nil constrainers' do
-    tokens = Wiot::Parser.token
+    tokens = WiotParser::token
     expect(tokens).not_to be_nil
 
     expect(tokens.length).to eq(11)
